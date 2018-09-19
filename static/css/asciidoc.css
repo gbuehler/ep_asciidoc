@@ -1,0 +1,217 @@
+/* from https://raw.github.com/mrcoles/markdown-css/master/markdown.css */
+
+.asciidoc {
+  word-wrap: break-word;
+}
+.asciidoc,
+.asciidoc h1,
+.asciidoc h2,
+.asciidoc h3,
+.asciidoc h4,
+.asciidoc h5,
+.asciidoc h6,
+.asciidoc pre,
+.asciidoc code,
+.asciidoc blockquote,
+.asciidoc em,
+.asciidoc strong,
+.asciidoc code {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: consolas, monaco, courier, "courier new", fixed-width;
+  color: #333333;
+}
+.asciidoc h1,
+.asciidoc h2,
+.asciidoc h3,
+.asciidoc h4,
+.asciidoc h5,
+.asciidoc h6,
+.asciidoc pre,
+.asciidoc code,
+.asciidoc blockquote,
+.asciidoc ol,
+.asciidoc ul,
+.asciidoc li,
+.asciidoc p,
+.asciidoc section,
+.asciidoc header,
+.asciidoc footer {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.asciidoc h1,
+.asciidoc p,
+.asciidoc ul,
+.asciidoc ol,
+.asciidoc pre,
+.asciidoc blockquote {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.asciidoc h1 {
+  position: relative;
+  display: inline-block;
+  display: table-cell;
+  padding: 20px 0 40px;
+  margin: 0;
+  overflow: hidden;
+}
+.asciidoc h1:after {
+  content: "====================================================================================================";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+.asciidoc h1 + * {
+  margin-top: 0;
+}
+.asciidoc h2,
+.asciidoc h3,
+.asciidoc h4,
+.asciidoc h5,
+.asciidoc h6 {
+  position: relative;
+  margin-bottom: 20px;
+}
+.asciidoc h2:before,
+.asciidoc h3:before,
+.asciidoc h4:before,
+.asciidoc h5:before,
+.asciidoc h6:before {
+  content: "== ";
+  display: inline;
+}
+.asciidoc h3:before {
+  content: "=== ";
+}
+.asciidoc h4:before {
+  content: "==== ";
+}
+.asciidoc h5:before {
+  content: "===== ";
+}
+.asciidoc h6:before {
+  content: "====== ";
+}
+.asciidoc li {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+  padding-left: 4ch;
+}
+.asciidoc li:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.asciidoc ul > li:after {
+  content: "*";
+}
+.asciidoc ol {
+  counter-reset: ol;
+}
+.asciidoc ol > li:after {
+  content: counter(ol) ".";
+  counter-increment: ol;
+}
+.asciidoc pre {
+  margin-left: 34px;
+  padding-left: 4ch;
+}
+.asciidoc blockquote {
+  position: relative;
+  padding-left: 17px;
+  padding-left: 2ch;
+  overflow: hidden;
+}
+.asciidoc blockquote:after {
+  content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+  white-space: pre;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.asciidoc strong:before,
+.asciidoc strong:after {
+  content: "**";
+  display: inline;
+}
+.asciidoc em:before,
+.asciidoc em:after {
+  content: "__";
+  display: inline;
+}
+.asciidoc a {
+  text-decoration: none;
+}
+.asciidoc a:before {
+  content: "[";
+  display: inline;
+  color: #333333;
+}
+.asciidoc a:after {
+  content: "](" attr(href) ")";
+  display: inline;
+  color: #333333;
+}
+.asciidoc code {
+  font-weight: 100;
+}
+.asciidoc code:before,
+.asciidoc code:after {
+  content: "`";
+  display: inline;
+}
+.asciidoc pre code:before,
+.asciidoc pre code:after {
+  content: none;
+}
+.asciidoc hr {
+  position: relative;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 20px;
+}
+.asciidoc hr:after {
+  content: "----------------------------------------------------------------------------------------------------";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+@-moz-document url-prefix() {
+  .asciidoc h1 {
+    display: block;
+  }
+}
+.asciidoc-ones ol > li:after {
+  content: "1.";
+}
+
+/* Additional styles added by John McLear for Etherpad */
+
+.asciidoc b:before{
+  content: "**"
+}
+.asciidoc b:after{
+  content: "**"
+}
+
+.asciidoc i:before{
+  content: "*"
+}
+.asciidoc i:after{
+  content: "*"
+}
