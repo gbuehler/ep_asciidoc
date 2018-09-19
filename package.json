@@ -1,0 +1,48 @@
+{
+  "_from": "ep_asciidoc",
+  "_id": "ep_asciidoc@0.0.10",
+  "_inBundle": false,
+  "_integrity": "sha1-0/Yk97umTTUP8CjtJBOtPNXuuR4=",
+  "_location": "/ep_asciidoc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ep_asciidoc",
+    "name": "ep_asciidoc",
+    "escapedName": "ep_asciidoc",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_shasum": "d3f624f7bba64d350ff028ed2413ad3cd5eeb91e",
+  "_spec": "ep_asciidoc",
+  "_where": "/home/etherpad/etherpad-lite",
+  "author": {
+    "name": "Greg Buehler",
+    "email": "gbuehler@opengeospatial.org",
+    "url": "http://www.opengeospatial.org"
+  },
+  "bugs": {
+    "url": "https://github.com/gbuehler/ep_asciidoc/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [],
+  "deprecated": false,
+  "description": "Edit and Export as Asciidoc in Etherpad",
+  "homepage": "https://github.com/gbuehler/ep_asciidoc#readme",
+  "license": "Apache-2.0",
+  "name": "ep_asciidoc",
+  "peerDependencies": {
+    "ep_headings2": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbuehler/ep_asciidoc.git"
+  },
+  "version": "0.0.10"
+}
