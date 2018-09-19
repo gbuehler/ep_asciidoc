@@ -68,7 +68,7 @@ function getAsciidocFromAtext(pad, atext)
   var textLines = atext.text.slice(0, -1).split('\n');
   var attribLines = Changeset.splitAttributionLines(atext.attribs, atext.text);
 
-  var tags = ['**', '*', 'underline', 'sout'];
+  var tags = ['**', '__', '[.underline]', '[.strikethrough]'];
   var props = ['bold', 'italic', 'underline', 'strikethrough'];
   var anumMap = {};
 
@@ -81,7 +81,7 @@ function getAsciidocFromAtext(pad, atext)
     }
   });
 
-  var headingtags = ['#', '##', '###', '    ', '      ', '        '];
+  var headingtags = ['=', '==', '===', '====', '=====', '======'];
   var headingprops = [['heading', 'h1'], ['heading', 'h2'], ['heading', 'h3'], ['heading', 'h4'], ['heading', 'h5'], ['heading', 'h6']];
   var headinganumMap = {};
 
